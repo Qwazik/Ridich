@@ -1,0 +1,176 @@
+extends _template
+
+block main
+	// header 
+	.page__main-header#header
+		.slider-image
+		.main-header
+			.responsive-bar.sm-vis
+
+				.biggest
+					i.icon-phone-circled
+					| (8 800) 800-80-80
+				button.responsive-nav.icon-menu
+			.main-header__top
+				.container.table
+					.table-cell.main-logo__wrap: .main-logo
+						a(href="/"): img(src="img/logo.png", alt="Бугульминский Завод Комбикормов и БВМК")
+					.table-cell.main-menu__wrap: .main-menu
+						ul
+							li: a(href="#") Главная    
+							li: a(href="#about") О нас    
+							li: a(href="#activities") Направления
+							li: a(href="#partner") Основной партнер
+							li: a(href="#news") Новости
+							li: a(href="#bottomForm") Оставить заявку
+					.table-cell.main-header__contacts
+						p.biggest (8 800) 800-80-80
+						p.addr Москва, ул 1905 года, дом 7,
+						a(href="mainto:info@ridichi.ru").orange-clr info@ridichi.ru
+			.main-header__slider.main-slider
+				.container
+					ul#mainSlider
+						li(data-image="img/slide1.jpg")
+							.main-slider__text
+								strong.name 15-17 февраль
+								p.desc Итоги поволжского <br> агро форума
+								p 2017, Казань
+							.main-slider__footer
+								a(href="#").btn.btn--orange Подробнее о мероприятии
+								.sep
+								.table.small-logo
+									.table-cell
+										img(src="img/slider-logo.png", alt="")
+									.table-cell Генеральный<br>партнер БВМК
+						//- li(data-image="img/imgsm2.jpg")
+						//- 	.main-slider__text
+						//- 		strong.name 15-12 февраль
+						//- 		p.desc Итоги поволжского <br> агро форума
+						//- 		p 2017, Казань
+						//- 	.main-slider__footer
+						//- 		a(href="#").btn.btn--orange Подробнее о мероприятии
+						//- 		.sep
+						//- 		.table.small-logo
+						//- 			.table-cell
+						//- 				img(src="img/slider-logo.png", alt="")
+						//- 			.table-cell Генеральный<br>партнер БВМК
+						//- li(data-image="img/imgsm3.jpg")
+						//- 	.main-slider__text
+						//- 		strong.name 15-13 февраль
+						//- 		p.desc Итоги поволжского <br> агро форума
+						//- 		p 2017, Казань
+						//- 	.main-slider__footer
+						//- 		a(href="#").btn.btn--orange Подробнее о мероприятии
+						//- 		.sep
+						//- 		.table.small-logo
+						//- 			.table-cell
+						//- 				img(src="img/slider-logo.png", alt="")
+						//- 			.table-cell Генеральный<br>партнер БВМК
+					
+	// about
+	.page__about#about
+		.container
+			h2.sm-vis Немного о нас
+		.about
+			.about__right
+				.position
+					.about-images
+						.col
+							a(href="img/imgsm3.jpg" data-fancybox-group="gal1").fancybox: img(src="img/imgsm3.jpg", alt="")
+							a(href="img/imgsm1.png" data-fancybox-group="gal1").fancybox.main
+								img(src="img/imgsm1.png", alt="")
+								i.icon-magnifier
+						.col
+							a(href="img/imgsm2.jpg" data-fancybox-group="gal1").fancybox: img(src="img/imgsm2.jpg", alt="")
+							a(href="img/imgsm4.jpg" data-fancybox-group="gal1").fancybox: img(src="img/imgsm4.jpg", alt="")
+					.about__mail
+						img(src="img/about-mail.png", alt="")
+						.author
+							span.name Сергей Исаев
+							span.post директор ООО РЕПРОДУКТ
+			.container
+				.about__left
+					h2.sm-hide Немного о нас
+					p.gray-text <i class="bt1"></i> Бугульминский завод комбикормов и БВМК ООО РЕПРОДУКТ открыт 25 августа 2014 года в торжественной обстановке с участием Президента Татарстана Рустама Минниханова и на данный момент остается крупнейшим на юго-востоке республики. Ежегодно предприятие производит 200 тысяч тонн высококачественных комбикормов и БВМК. <i class="bt2"></i>
+
+					p Емкость элеваторного комплекса с момента открытия предприятия увеличена с 36 до 60 тысяч тонн зерна. Продолжается модернизация и расширение производственных линий с учетом увеличивающегося спроса на высококачественную продукцию. Использование современных методик углубленного анализа сырья позволило создать экономически привлекательный продукт с самыми востребованными характеристиками.
+
+	// about end
+	// activities
+	.page__activities#activities
+		.container
+			.activities
+				.activities__header
+					h2 Основные направления
+					p Завод производит IV основные категории концентрата
+				.activities__body
+					.row
+						.md-50
+							span.icon.icon-ico1
+							p.name БВМК ОПТИМАЛЬНЫЙ
+							p создан с максимальной концентрацией биологически активных веществ. Предназначен для самостоятельного введения в корм.
+						.md-50
+							span.icon.icon-ico2
+							p.name БВМК для КРС
+							p вводится в концентрированные корма или комбикорма. Изготовлен с учетом потребления грубых и сочных кормов. Данный тип рассчитывается для клиента индивидуально исходя из особенностей состава рациона.
+						.md-50
+							span.icon.icon-ico3
+							p.name БВМК для ПТИЦЫ
+							p производится для разных возрастных групп со строго рассчитанным количеством макро и микроэлементов, а также аминокислот и ферментов-белков. Повышается доступность для организма биологических веществ.
+						.md-50
+							span.icon.icon-ico4
+							p.name БВМК для СВИНЕЙ
+							p обеспечивает комбикорма сбалансированным составом, разработан с целью увеличения прироста за короткие сроки.
+	// activities end
+	.text-section.hidden
+		.container
+			p.gray-text <i class="bt1"></i> На мероприятии мы будем рассматривать индивидуальные заявки. Рассчитываем провести множество продуктивных встреч, поделиться последними наработками в сфере кормления сельскохозяйственных животных, птицы и рыбы. Ждем Вас принять участие в взаимовыгодном диалоге! <i class="bt2"></i>
+	// partner 
+	.page__partner#partner
+		.container
+			h2 Основной партнер Ридичи
+			img(src="img/logo2.png", alt="Ридичи")
+			p.gray-text Бугульминский завод комбикормов и БВМК ООО РЕПРОДУКТ открыт 25 августа 2014 года в торжественной обстановке с участием Президента Татарстана Рустама Минниханова и на данный момент остается крупнейшим на юго-востоке республики. Ежегодно предприятие производит 200 тысяч тонн высококачественных комбикормов и БВМК. 
+	// news
+	.page__news#news
+		.container
+			h2 Новости
+			ul.news.clearifx
+				li.md-50.news__item
+					a(href="#").image: img(src="img/slide1.jpg", alt="")
+					strong.orange-clr США перебросят в Польшу тысячу военнослужащих
+					p производится для разных возрастных групп со строго рассчитанным 
+				li.md-50.news__item
+					a(href="#").image: img(src="img/slide1.jpg", alt="")
+					strong.orange-clr США перебросят в Польшу тысячу военнослужащих
+					p производится для разных возрастных групп со строго рассчитанным 
+	// news end
+	// bottom-form
+	.page__form#bottomForm
+		.container
+			p По всем вопросам о нашей деятельности звоните <span class="orange-clr">(8 800) 800-00-00</span> <span class="gray-clr">или заполните форму заявки ниже</span>
+			form(action="")
+				input(type="hidden" name="subject" value="Форма обраной связи")
+				.input-area
+					.col: input(type="text" placeholder="Введите ваше имя")
+					.col: input(type="email" placeholder="Введите ваш E-mail")
+					.col: input(type="tel" placeholder="Введите ваш телефон")
+					.col: input(type="text" placeholder="Удобное время для связи")
+				.clearfix
+					input(type="submit" value="Отправить").btn.btn--orange
+					span.conf Ваши данные в безопасности
+	// bottom-form end
+	// footer
+	.page__main-footer
+		.container
+			.main-menu
+				ul
+					li: a(href="#") Главная    
+					li: a(href="#") О нас    
+					li: a(href="#") Направления
+					li: a(href="#") Основной партнер
+					li: a(href="#") Новости
+					li: a(href="#") Оставить заявку
+			.copyright Все права зашищены. 2017
+	// footer end
+	

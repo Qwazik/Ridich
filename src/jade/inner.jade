@@ -1,0 +1,86 @@
+extends _template
+
+block main
+	// header 
+	.page__main-header.inner#header
+		.main-header
+			.responsive-bar.sm-vis
+
+				.biggest
+					i.icon-phone-circled
+					| (8 800) 800-80-80
+				button.responsive-nav.icon-menu
+			.main-header__top
+				.container.table
+					.table-cell.main-logo__wrap: .main-logo
+						a(href="/"): img(src="img/logo.png", alt="Бугульминский Завод Комбикормов и БВМК")
+					.table-cell.main-menu__wrap: .main-menu
+						ul
+							li: a(href="#") Главная    
+							li: a(href="#about") О нас    
+							li: a(href="#activities") Направления
+							li: a(href="#partner") Основной партнер
+							li: a(href="#news") Новости
+							li: a(href="#bottomForm") Оставить заявку
+					.table-cell.main-header__contacts
+						p.biggest (8 800) 800-80-80
+						p.addr Москва, ул 1905 года, дом 7,
+						a(href="mainto:info@ridichi.ru").orange-clr info@ridichi.ru						
+	.page__content
+		.text-area
+			.container
+				h2 О мероприятии
+				p.gray-text Дорогие коллеги и партнеры!
+				p Бугульминский завод комбикормов и БВМК ООО РЕПРОДУКТ приглашает Вас 15-17 февраля 2017 года посетить наш стенд 1.212 в павильоне №1 международной специализированной выставки Поволжского Агропромышленного Форума.
+				p Мы сознательно стали Генеральным партнером мероприятия, чтобы вы могли с легкостью нас найти, а также обустроили большое пространство для удобства проведения встреч. Нам есть, что предложить предприятиям разного уровня, которые стремятся снизить расходы на корма и при этом не потерять продуктивность.
+				p Мы представим на выставке продукт-флагман БЕЛКОВЫЙ ВИТАМИННО-МИНЕРАЛЬНЫЙ КОНЦЕНТРАТ для сельскохозяйственных животных, птицы и рыбы.
+		.text-area
+			.container
+				h2 Место проведения форума
+				img(src="img/map.jpg", alt="Местро проведения форума")
+				a(href="programm.pdf").btn.btn--download
+					.icon-wrap: .icon.icon-pdf
+					span Скачать программу <br>мероприятия
+	// news
+	.page__news#news
+		.container
+			h2 Как нас найти на форуме
+			ul.news.clearifx
+				li.md-50.news__item
+					a(href="#").image: img(src="img/inner-news.jpg", alt="")
+					span.gray-text Мы являемся генеральным партнером
+					p Генеральный партнер и участник Поволжского Агропромышленного Форума Бугульминский завод комбикормов и БВМК ООО РЕПРОДУКТ приглашает представителей личных подсобных и фермерских хозяйств, мегаферм, мукомольных комбинатов, элеваторов, а также комбикормовых заводов и агропромышленных холдингов посетить 20-ю международную специализированную выставку, которая откроет свои двери 15 февраля 2017 года и продлится три дня.
+				li.md-50.news__item
+					a(href="#").image: img(src="img/inner-news.jpg", alt="")
+					span.gray-text Мы являемся генеральным партнером
+					p Генеральный партнер и участник Поволжского Агропромышленного Форума Бугульминский завод комбикормов и БВМК ООО РЕПРОДУКТ приглашает представителей личных подсобных и фермерских хозяйств, мегаферм, мукомольных комбинатов, элеваторов, а также комбикормовых заводов и агропромышленных холдингов посетить 20-ю международную специализированную выставку, которая откроет свои двери 15 февраля 2017 года и продлится три дня.
+	// news end
+	// bottom-form
+	.page__form#bottomForm
+		.container
+			p По всем вопросам о нашей деятельности звоните <span class="orange-clr">(8 800) 800-00-00</span> <span class="gray-clr">или заполните форму заявки ниже</span>
+			form(action="")
+				input(type="hidden" name="subject" value="Форма обраной связи")
+				.input-area
+					.col: input(type="text" placeholder="Введите ваше имя")
+					.col: input(type="email" placeholder="Введите ваш E-mail")
+					.col: input(type="tel" placeholder="Введите ваш телефон")
+					.col: input(type="text" placeholder="Удобное время для связи")
+				.clearfix
+					input(type="submit" value="Отправить").btn.btn--orange
+					span.conf Ваши данные в безопасности
+	// bottom-form end
+	// footer
+	.page__main-footer
+		.container
+			.main-menu
+				ul
+					li: a(href="#") Главная    
+					li: a(href="#") О нас    
+					li: a(href="#") Направления
+					li: a(href="#") Основной партнер
+					li: a(href="#") Новости
+					li: a(href="#") Оставить заявку
+			.copyright Все права зашищены. 2017
+	// footer end
+	
