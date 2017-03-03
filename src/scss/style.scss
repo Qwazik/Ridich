@@ -192,7 +192,33 @@ a{
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 70px 0;
+	position: relative;
+	.bg-video{
+		top: 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 100%;
+		overflow: hidden;
+		&:after{
+			content: '';
+			position: absolute;
+			display: block;
+			background-color: #fff;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			opacity: .8;
+		}
+		video{
+			width: 1920px;
+			
+		}
+	}
 	.container{
+		position: relative;
+		z-index: 2;
 		padding-right: 365px;
 	}
 	h2{
@@ -550,7 +576,12 @@ a{
 	form{
 		font-size: 0px;
 	}
-	input{
+	select{
+		box-sizing: border-box;
+	}
+	input,select{
+		height: 60px;
+		width: 266px;
 		padding: 15px 25px;
 		font-size: 22px;
 		border: none;
@@ -591,6 +622,16 @@ a{
 		float: right;
 		font-size: 18px;
 		color: $gray;
+	}
+}
+
+#mail{
+	max-width: 800px;
+	text-align: justify;
+	padding: 0 20px;
+	p{
+		margin: 20px 0;
+		text-indent: 30px;
 	}
 }
 
@@ -727,8 +768,7 @@ a{
 	}
 }
 .hidden {
-    display: none !important;
-    visibility: hidden;
+    display: none ;
 }
 .visuallyhidden {
     border: 0;

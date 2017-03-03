@@ -8,7 +8,7 @@ block main
 
 				.biggest
 					i.icon-phone-circled
-					| (8 800) 800-80-80
+					a(href="tel:+78008008080") (8 800) 800-80-80
 				button.responsive-nav.icon-menu
 			.main-header__top
 				.container.table
@@ -22,10 +22,11 @@ block main
 							li: a(href="#partner") Основной партнер
 							li: a(href="#news") Новости
 							li: a(href="#bottomForm") Оставить заявку
-					.table-cell.main-header__contacts
-						p.biggest (8 800) 800-80-80
-						p.addr Москва, ул 1905 года, дом 7,
-						a(href="mainto:info@ridichi.ru").orange-clr info@ridichi.ru						
+					.table-cell
+						.main-header__contacts
+								p.biggest (8 800) 800-80-80
+								p.addr Москва, ул 1905 года, дом 7,
+								a(href="mainto:info@ridichi.ru").orange-clr info@ridichi.ru						
 	.page__content
 		.text-area
 			.container

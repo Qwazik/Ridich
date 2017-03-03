@@ -9,7 +9,7 @@ block main
 
 				.biggest
 					i.icon-phone-circled
-					| (8 800) 800-80-80
+					a(href="tel:+78008008080") (8 800) 800-80-80
 				button.responsive-nav.icon-menu
 			.main-header__top
 				.container.table
@@ -23,10 +23,11 @@ block main
 							li: a(href="#partner") Основной партнер
 							li: a(href="#news") Новости
 							li: a(href="#bottomForm") Оставить заявку
-					.table-cell.main-header__contacts
-						p.biggest (8 800) 800-80-80
-						p.addr Москва, ул 1905 года, дом 7,
-						a(href="mainto:info@ridichi.ru").orange-clr info@ridichi.ru
+					.table-cell
+						.main-header__contacts
+							p.biggest (8 800) 800-80-80
+							p.addr Москва, ул 1905 года, дом 7,
+							a(href="mainto:info@ridichi.ru").orange-clr info@ridichi.ru
 			.main-header__slider.main-slider
 				.container
 					ul#mainSlider
@@ -36,7 +37,7 @@ block main
 								p.desc Итоги поволжского <br> агро форума
 								p 2017, Казань
 							.main-slider__footer
-								a(href="#").btn.btn--orange Подробнее о мероприятии
+								a(href="inner.html").btn.btn--orange Подробнее о мероприятии
 								.sep
 								.table.small-logo
 									.table-cell
@@ -76,15 +77,39 @@ block main
 				.position
 					.about-images
 						.col
-							a(href="img/imgsm3.jpg" data-fancybox-group="gal1").fancybox: img(src="img/imgsm3.jpg", alt="")
-							a(href="img/imgsm1.png" data-fancybox-group="gal1").fancybox.main
+							a(href="img/sDJI_0027.jpg" data-fancybox-group="gal1").fancybox: img(src="img/imgsm3.jpg", alt="")
+							a(href="img/s0IMG_5592.jpg" data-fancybox-group="gal1").fancybox.main
 								img(src="img/imgsm1.png", alt="")
 								i.icon-magnifier
 						.col
-							a(href="img/imgsm2.jpg" data-fancybox-group="gal1").fancybox: img(src="img/imgsm2.jpg", alt="")
-							a(href="img/imgsm4.jpg" data-fancybox-group="gal1").fancybox: img(src="img/imgsm4.jpg", alt="")
+							a(href="img/sDJI_0027.jpg" data-fancybox-group="gal1").fancybox: img(src="img/imgsm2.jpg", alt="")
+							a(href="img/3.jpg" data-fancybox-group="gal1").fancybox: img(src="img/imgsm4.jpg", alt="")
 					.about__mail
-						img(src="img/about-mail.png", alt="")
+						a(href="#mail").fancybox: img(src="img/about-mail.png", alt="")
+						div.hidden#mail
+							.ta-center
+								p Дорогие коллеги и партнеры!
+
+							p От лица специалистов Бугульминского завода комбикормов и БВМК ООО РЕПРОДУКТ и себя лично приветствую Вас по случаю проведения 20-й юбилейной международной специализированной выставки Поволжского Агропромышленного Форума 2017 года.
+
+							p Всем нам представлена возможность объединить усилия и продемонстрировать командную работу для развития сельскохозяйственной отрасли. Но каждому из нас предстоит поделиться инновационными идеями, собственным видением взаимовыгодного сотрудничества участников АПК, а также показать лучшие качества своих разработок, услуг и продуктов.
+
+							p Уверен, что работа форума будет способствовать приобретению новых деловых контактов, долгосрочных соглашений и конструктивному общению.
+
+							p Дорогие друзья, наши предприятия должны стать уютным и комфортным домом, в котором культивируется порядок, предоставляется компетентная консультация, качественный сервис для посетителей и потребителей. Ведь в конечном итоге они и являются нашими инвесторами.
+
+							p Конкурентноспособное предприятие должно рассматриваться как объект для построения стратегических организационных процессов. Усилия таких предприятий – это ценность и мерило экономического развития страны.
+
+							p Мы благодарим организаторов и кураторов Поволжского Агропромышленного Форума 2017 года, а также желаем плодотворной работы
+
+
+							p всем участникам.
+
+							p С уважением,
+
+							p директор ООО РЕПРОДУКТ
+
+							p Сергей Исаев.
 						.author
 							span.name Сергей Исаев
 							span.post директор ООО РЕПРОДУКТ
@@ -127,6 +152,9 @@ block main
 			p.gray-text <i class="bt1"></i> На мероприятии мы будем рассматривать индивидуальные заявки. Рассчитываем провести множество продуктивных встреч, поделиться последними наработками в сфере кормления сельскохозяйственных животных, птицы и рыбы. Ждем Вас принять участие в взаимовыгодном диалоге! <i class="bt2"></i>
 	// partner 
 	.page__partner#partner
+		.bg-video
+			video(autoplay, loop, muted)
+				source(src="video/dnk-bg.mp4", type="video/mp4")
 		.container
 			h2 Основной партнер Ридичи
 			img(src="img/logo2.png", alt="Ридичи")
@@ -138,11 +166,11 @@ block main
 			ul.news.clearifx
 				li.md-50.news__item
 					a(href="#").image: img(src="img/slide1.jpg", alt="")
-					strong.orange-clr США перебросят в Польшу тысячу военнослужащих
+					strong.orange-clr Открытие ПОВОЛЖСКОГО АГРО ФОРУМА
 					p производится для разных возрастных групп со строго рассчитанным 
 				li.md-50.news__item
 					a(href="#").image: img(src="img/slide1.jpg", alt="")
-					strong.orange-clr США перебросят в Польшу тысячу военнослужащих
+					strong.orange-clr ИТОГИ ПОВОЛЖСКОГО КОНКУРСА
 					p производится для разных возрастных групп со строго рассчитанным 
 	// news end
 	// bottom-form
@@ -155,7 +183,13 @@ block main
 					.col: input(type="text" placeholder="Введите ваше имя")
 					.col: input(type="email" placeholder="Введите ваш E-mail")
 					.col: input(type="tel" placeholder="Введите ваш телефон")
-					.col: input(type="text" placeholder="Удобное время для связи")
+					.col: select
+						option(disabled selected) Удобное время для связи
+						option в любое время
+						option 8:00 - 12:00
+						option 12:00 - 16:00
+						option 16:00 - 20:00
+					//- input(type="text" placeholder="Удобное время для связи")
 				.clearfix
 					input(type="submit" value="Отправить").btn.btn--orange
 					span.conf Ваши данные в безопасности
